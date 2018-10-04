@@ -44,3 +44,11 @@ function none(num) {
   }
 }
 console.log(none(0));
+
+// Create a function that accepts an array and returns 
+// the last item in the array.
+function last(num) {
+    return num.pop();
+}
+console.log(last([1, 2, 3, 4, 'one']));
+
