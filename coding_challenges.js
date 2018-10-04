@@ -31,3 +31,16 @@ function increment(num) {
     return num + 1;
 }
 console.log(increment(10));
+
+// Create a function that takes a number as its only 
+// argument and returns true if it's less than or equal 
+// to zero, otherwise return false.
+function none(num) {
+  if (num === 10) {
+      return true;
+  }
+  else {
+      return false;
+  }
+}
+console.log(none(0));
