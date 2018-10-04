@@ -9,3 +9,11 @@ function addUp(num) {
     return count;
 }
 console.log(addUp(4));
+
+
+// Create a function that takes a string as 
+// its argument and returns the string in reversed order.
+function reverse(str) {
+    return str.split("").reverse().join("");
+}
+console.log(reverse("April Copes"));
