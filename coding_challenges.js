@@ -57,6 +57,16 @@ person.name = "Mrs. White";
 var who = person.name;
 console.log(who);
 
+// Create a function that takes a number as an argument and returns "even" 
+// for even numbers and "odd" for odd numbers.
+function isEvenOrOdd(num) {
+	if (num % 2 == 0) {
+		return 'even';
+	} else {
+		return 'odd';
+	}
+}
+
 // Create a function that takes an array as an argument and returns true or false depending 
 // on whether the average of all elements in the array is a whole number or not.
 
