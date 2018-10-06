@@ -52,3 +52,23 @@ function last(num) {
 }
 console.log(last([1, 2, 3, 4, 'one']));
 
+var person = [];
+person.name = "Mrs. White";
+var who = person.name;
+console.log(who);
+
+// Create a function that takes an array as an argument and returns true or false depending 
+// on whether the average of all elements in the array is a whole number or not.
+
+function isAvgWhole(arr) {
+	sum = arr.reduce(function(a, b) {
+		return a + b;
+	})
+	average = sum / arr.length;
+	if (Number.isInteger(average)) {
+		return true;
+	} else {
+		return false;
+	}	
+}
+
