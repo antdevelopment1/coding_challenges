@@ -83,6 +83,11 @@ function calculateExponent(num, exp) {
 	return Math.pow(num, exp);
 }
 
+// Create a function that takes an array and a string as arguments and return the index of the string.
+function find_index(arr, str) {
+	return arr.indexOf(str);
+}
+
 // Create a function that takes an array as an argument and returns true or false depending 
 // on whether the average of all elements in the array is a whole number or not.
 
