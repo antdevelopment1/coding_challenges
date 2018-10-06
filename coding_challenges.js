@@ -105,6 +105,17 @@ function Go(num) {
 	return "-".repeat(num);
 }
 
+// Create a function that reverses a boolean value and returns the string "boolean expected" 
+// if another variable type is given.
+function reverse(bool) {
+	if (bool === true) {
+		return false;
+	} else if (bool === false) {
+		return true;
+	} else {
+		return "boolean expected";
+	}
+}
 
 // Create a function that takes an array as an argument and returns true or false depending 
 // on whether the average of all elements in the array is a whole number or not.
