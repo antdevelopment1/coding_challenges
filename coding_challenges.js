@@ -95,6 +95,12 @@ function month_name(num) {
 	return year[num - 1];
 }
 
+// Create a function that takes a string and returns the word count. The string will be a sentence
+function countWords(str) {
+	return str.split(" ").length;
+}
+
+
 // Create a function that takes an array as an argument and returns true or false depending 
 // on whether the average of all elements in the array is a whole number or not.
 
