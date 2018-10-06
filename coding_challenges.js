@@ -78,6 +78,11 @@ function findDigitAmount(num) {
     return list.length;
 }
 
+// Create a function that takes a base number and an exponent number and returns the calculation.
+function calculateExponent(num, exp) {
+	return Math.pow(num, exp);
+}
+
 // Create a function that takes an array as an argument and returns true or false depending 
 // on whether the average of all elements in the array is a whole number or not.
 
