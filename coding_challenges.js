@@ -88,6 +88,13 @@ function find_index(arr, str) {
 	return arr.indexOf(str);
 }
 
+// Create a function that takes a number (from 1 to 12) and return its corresponding month name as a string.
+
+function month_name(num) {
+	var year = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+	return year[num - 1];
+}
+
 // Create a function that takes an array as an argument and returns true or false depending 
 // on whether the average of all elements in the array is a whole number or not.
 
