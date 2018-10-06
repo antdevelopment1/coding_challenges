@@ -100,6 +100,11 @@ function countWords(str) {
 	return str.split(" ").length;
 }
 
+// Create a function that takes a number (from 1 - 60) and returns a corresponding string of hyphens.
+function Go(num) {
+	return "-".repeat(num);
+}
+
 
 // Create a function that takes an array as an argument and returns true or false depending 
 // on whether the average of all elements in the array is a whole number or not.
