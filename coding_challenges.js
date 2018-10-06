@@ -67,6 +67,17 @@ function isEvenOrOdd(num) {
 	}
 }
 
+// Create a function that takes a number as an argument and returns the amount of digits it has.
+
+function findDigitAmount(num) {
+    var string = num.toString();
+    var list = [];
+    for (var i = 0; i < string.length; i++) {
+      list.push(string[i]);  
+    }
+    return list.length;
+}
+
 // Create a function that takes an array as an argument and returns true or false depending 
 // on whether the average of all elements in the array is a whole number or not.
 
