@@ -133,6 +133,11 @@ function findSmallestNum(arr) {
 	return min[0];
 }
 
+// Create a function that accepts a string (of a persons first and last name) and returns a string with the first and last name swapped.
+function nameShuffle(str) {
+	return str.split(" ").reverse().join(" ");
+}
+
 // Create a function that takes an array as an argument and returns true or false depending 
 // on whether the average of all elements in the array is a whole number or not.
 
