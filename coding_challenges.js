@@ -138,6 +138,14 @@ function nameShuffle(str) {
 	return str.split(" ").reverse().join(" ");
 }
 
+// Create a function to multiply all values in an array by the amount of values in that array.
+function MultiplyByLength(arr) {
+	for (var i = 0; i < arr.length; i++) {
+		arr[i] = arr[i] * arr.length;
+	}
+	return arr;
+}
+
 // Create a function that takes an array as an argument and returns true or false depending 
 // on whether the average of all elements in the array is a whole number or not.
 
