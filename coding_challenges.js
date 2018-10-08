@@ -146,6 +146,15 @@ function MultiplyByLength(arr) {
 	return arr;
 }
 
+// Create a function that takes a string as its argument and returns the string in reversed order.
+function reverse(str) {
+	var newStr = '';
+	for (var i = str.length - 1; i >= 0; --i) {
+	  newStr += str[i];
+	}
+	return newStr;
+}
+
 // Create a function that takes an array as an argument and returns true or false depending 
 // on whether the average of all elements in the array is a whole number or not.
 
