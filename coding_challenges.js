@@ -117,6 +117,14 @@ function reverse(bool) {
 	}
 }
 
+// Create a function that takes an array of numbers. Return the largest number in the array.
+function findLargestNum(arr) {
+	var sorted = arr.sort(function(a, b) {
+		return b - a;
+	})
+	return sorted[0];
+}
+
 // Create a function that takes an array as an argument and returns true or false depending 
 // on whether the average of all elements in the array is a whole number or not.
 
