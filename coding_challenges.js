@@ -177,6 +177,19 @@ function isFourLetters(arr) {
 	return container;
 }
 
+// Create a function that takes two arguments (item, times). The first argument (item) is the item that needs 
+// repeating while the second argument (times) is the number of times the item is to be repeated. Return the result in an array.
+
+function repeat(item, times) {
+	var newStr = [];
+	count = 0;
+	while (count < times) {
+		newStr.push(item);
+		count++;
+	}
+	return newStr;
+}
+
 // Create a function that takes an array of numbers and returns only the even values.
 function noOdds(arr) {
 	container = [];
@@ -188,6 +201,16 @@ function noOdds(arr) {
 	return container;
 }
 
+// Create a function that takes two strings as arguments and returns the number of times the first string is found in the second string.
+function charCount(myChar, str) {
+	count = 0;
+	for (var i = 0; i < str.length; i++) {
+		if (myChar === str[i]) {
+			count++;
+		}
+	}
+	return count;
+}
 
 // Create a function that takes an array as an argument and returns true or false depending 
 // on whether the average of all elements in the array is a whole number or not.
@@ -204,16 +227,4 @@ function isAvgWhole(arr) {
 	}	
 }
 
-// Create a function that takes two arguments (item, times). The first argument (item) is the item that needs 
-// repeating while the second argument (times) is the number of times the item is to be repeated. Return the result in an array.
-
-function repeat(item, times) {
-	var newStr = [];
-	count = 0;
-	while (count < times) {
-		newStr.push(item);
-		count++;
-	}
-	return newStr;
-}
 
