@@ -166,6 +166,19 @@ function checkEnding(str1, str2) {
 function AlphabetSoup(str) {
 	return str.split("").sort().join("");
 }
+// Create a function that takes an array of strings. Return all words in the array that are exactly four letters.
+
+// Create a function that takes an array of numbers and returns only the even values.
+function noOdds(arr) {
+	container = [];
+	for (var i = 0; i < arr.length; i++) {
+		if (arr[i] % 2 == 0) {
+			container.push(arr[i]);
+		}
+	}
+	return container;
+}
+
 
 // Create a function that takes an array as an argument and returns true or false depending 
 // on whether the average of all elements in the array is a whole number or not.
