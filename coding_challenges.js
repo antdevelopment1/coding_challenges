@@ -212,6 +212,22 @@ function charCount(myChar, str) {
 	return count;
 }
 
+// Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order.
+function minMax(arr) {
+	var sortedmin = arr.sort(function(a, b) {
+		return a - b;
+	})
+	var min = sortedmin[0];
+	var sortedmax = arr.sort(function(a, b) {
+		return b - a;
+	})
+	var max = sortedmax[0];
+	return [min, max];
+}
+
+
+
+
 // Create a function that takes an array as an argument and returns true or false depending 
 // on whether the average of all elements in the array is a whole number or not.
 
