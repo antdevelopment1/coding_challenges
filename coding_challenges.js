@@ -167,6 +167,15 @@ function AlphabetSoup(str) {
 	return str.split("").sort().join("");
 }
 // Create a function that takes an array of strings. Return all words in the array that are exactly four letters.
+function isFourLetters(arr) {
+	container = [];
+	for (var i = 0; i < arr.length; i++) {
+		if (arr[i].length === 4) {
+			container.push(arr[i]);
+		}
+	}
+	return container;
+}
 
 // Create a function that takes an array of numbers and returns only the even values.
 function noOdds(arr) {
