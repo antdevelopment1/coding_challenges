@@ -154,6 +154,14 @@ function reverse(str) {
 	}
 	return newStr;
 }
+// Create a function that takes two strings and returns true if the first argument ends with the second argument; otherewise return false .
+function checkEnding(str1, str2) {
+	if (str1.endsWith(str2)) {
+		return true;
+	} else {
+		return false;
+	}
+}
 
 // Create a function that takes an array as an argument and returns true or false depending 
 // on whether the average of all elements in the array is a whole number or not.
