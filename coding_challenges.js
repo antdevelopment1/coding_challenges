@@ -162,6 +162,10 @@ function checkEnding(str1, str2) {
 		return false;
 	}
 }
+// Create a function that takes a string and returns a string with its letters in alphabetical order.
+function AlphabetSoup(str) {
+	return str.split("").sort().join("");
+}
 
 // Create a function that takes an array as an argument and returns true or false depending 
 // on whether the average of all elements in the array is a whole number or not.
