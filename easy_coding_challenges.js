@@ -47,3 +47,26 @@ function isSymmetrical(num) {
 	}
 	
 }
+
+// Create a function that takes an array as an argument and returns true or false depending on whether the average of all elements in the array is a whole number or not.
+function isAvgWhole(arr) {
+	var summed = arr.reduce(function(a, b) {
+		return a + b;
+	})
+	var floatOrNot = summed / arr.length;
+	if (Number.isInteger(floatOrNot)) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+// Create a function that takes a string and returns a string in which each character is repeated once.
+function doubleChar(str) {
+	var newList = [];
+	var split = str.split("");
+	split.forEach(function(letter) {
+		newList += letter.repeat(2);
+	})
+	return newList;
+}
