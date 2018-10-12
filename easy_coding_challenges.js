@@ -10,3 +10,15 @@ function summed(num) {
 }
 console.log(summed(3));
 
+
+// Create a function that takes an array of positive numbers and strings and returns a new array without the strings. In other words, remove all strings from an array of elements.
+
+function filterArray(arr) {
+  var list = [];
+    arr.map(function(value) {
+        if (typeof value === 'number') {
+            list.push(value);
+        }
+    })
+    return list;
+}
