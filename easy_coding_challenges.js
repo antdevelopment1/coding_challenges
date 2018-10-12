@@ -70,3 +70,15 @@ function doubleChar(str) {
 	})
 	return newList;
 }
+
+// Take an array of integers (positive or negative or both) and return the sum of the absolute value of each element.
+function getAbsSum(arr) {
+	newArray = [];
+	eachNum = arr.forEach(function(number){
+		 newArray.push(Math.abs(number));
+	})
+	var summed = newArray.reduce(function(a, b){ 
+	  return a + b;
+	})
+	return summed;
+}
