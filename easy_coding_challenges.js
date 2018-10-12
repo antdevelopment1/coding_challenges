@@ -82,3 +82,18 @@ function getAbsSum(arr) {
 	})
 	return summed;
 }
+
+// Create a function that takes a string and returns the number (count) of vowels contained within it.
+function countVowels(str) {
+	var vowels = ['a', 'e', 'i', 'o', 'u'];
+	var count = 0;
+	var splitS = str.split("");
+	for (var i = 0; i < splitS.length; i++) {
+		for (var j = 0; j < vowels.length; j++) {
+			if (splitS[i] === vowels[j]) {
+				count++;
+			 }
+		}
+	}
+	return count;
+}
