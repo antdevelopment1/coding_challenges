@@ -35,3 +35,15 @@ function timeForMilkAndCookies(date) {
 		return false;
 	}
 }
+
+// Create a function that takes a number as an argument and returns true or false depending on whether the number is symmetrical or not. A number is symmetrical when it is the same as its reverse.
+
+function isSymmetrical(num) {
+	var splitArr = num.toString().split("").reverse().join("");
+	if (num === Number(splitArr)) {
+		return true;
+	} else {
+		return false;
+	}
+	
+}
