@@ -151,3 +151,16 @@ function detectBrowser(userAgent){
 		return "Internet Explorer";
 	}
 }
+
+// Create a function that takes an array of numbers and returns the following statistics:
+// Minimum Value, Maximum Value, Sequence Length, Average Value
+function minMaxLengthAverage(arr) {
+	var minNumSort = arr.sort(function(a,b) {return a - b;})
+	var minNum = minNumSort[0];
+	var maxNumSort = arr.sort(function(a,b) {return b - a;})
+	var maxNum = maxNumSort[0];
+	var sequence = arr.length;
+	var sum = arr.reduce(function(a,b) {return a + b;})
+	var average = sum / sequence;
+	return [minNum, maxNum,sequence, average];
+}
