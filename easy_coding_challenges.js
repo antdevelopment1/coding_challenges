@@ -145,3 +145,10 @@ function findLargestNums(arr) {
 		}
 	return emptyArr;
 }
+
+// Create a function that takes a string and returns a string with its letters in alphabetical order.
+
+function AlphabetSoup(str) {
+	return str.split("").sort().join("");
+}
+console.log(AlphabetSoup("hello"));
