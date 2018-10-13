@@ -12,7 +12,6 @@ console.log(summed(3));
 
 
 // Create a function that takes an array of positive numbers and strings and returns a new array without the strings. In other words, remove all strings from an array of elements.
-
 function filterArray(arr) {
   var list = [];
     arr.map(function(value) {
@@ -25,7 +24,6 @@ function filterArray(arr) {
 
 // Christmas Eve is almost upon us, so naturally we need to prepare some milk and cookies for Santa! Create a function that accepts a Date object and returns true if it's Christmas Eve 
 // (December 24th) and false otherwise. Keep in mind JavaScript's Date month is 0 based, meaning December is the 11th month while January is 0.
-
 function timeForMilkAndCookies(date) {
 	var day = date.getDate();
   var month = date.getMonth();
@@ -37,7 +35,6 @@ function timeForMilkAndCookies(date) {
 }
 
 // Create a function that takes a number as an argument and returns true or false depending on whether the number is symmetrical or not. A number is symmetrical when it is the same as its reverse.
-
 function isSymmetrical(num) {
 	var splitArr = num.toString().split("").reverse().join("");
 	if (num === Number(splitArr)) {
@@ -111,7 +108,6 @@ function isAvgWhole(arr) {
 
 // Write a function that takes four string arguments. You will be comparing the first string to the three next strings. Verify if the first string starts with the second string, 
 // includes the third string, and ends with the fourth string. If the first string passes all checks, return the string "My head, body, and tail.", otherwise, return "Incomplete.".
-
 function verifySubstrs(mainStr, head, body, tail) {
 	if (mainStr.startsWith(head) && mainStr.includes(body) && mainStr.endsWith(tail)) {
 		return "My head, body, and tail.";
@@ -122,7 +118,6 @@ function verifySubstrs(mainStr, head, body, tail) {
 
 // Create a function that takes an array of numbers and returns a new array, sorted in ascending order (smallest to biggest).
 // Sort numbers array in ascending order. If functions argument is null, an empty array or undefined, return an empty array. Return new array of sorted numbers.
-
 function sortNumsAscending(arr) {
 	if (arr === null || arr === [] || arr === undefined) {
 		return [];
@@ -146,9 +141,13 @@ function findLargestNums(arr) {
 	return emptyArr;
 }
 
-// Create a function that takes a string and returns a string with its letters in alphabetical order.
-
-function AlphabetSoup(str) {
-	return str.split("").sort().join("");
+// You need to detect what browser is being used. Create a function that takes a string (browser identifier) and returns the browser name.
+function detectBrowser(userAgent){
+	if (userAgent.includes('Firefox')) {
+		return "Mozilla Firefox";
+	} else if (userAgent.includes('Chrome')){
+		return "Google Chrome";
+	} else {
+		return "Internet Explorer";
+	}
 }
-console.log(AlphabetSoup("hello"));
