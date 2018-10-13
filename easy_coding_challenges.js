@@ -48,18 +48,6 @@ function isSymmetrical(num) {
 	
 }
 
-// Create a function that takes an array as an argument and returns true or false depending on whether the average of all elements in the array is a whole number or not.
-function isAvgWhole(arr) {
-	var summed = arr.reduce(function(a, b) {
-		return a + b;
-	})
-	var floatOrNot = summed / arr.length;
-	if (Number.isInteger(floatOrNot)) {
-		return true;
-	} else {
-		return false;
-	}
-}
 
 // Create a function that takes a string and returns a string in which each character is repeated once.
 function doubleChar(str) {
@@ -107,3 +95,27 @@ function myPi(n) {
 function silenceTrump(str) {
 	return str.replace(/[aiueo]/gi, "");
   }
+
+// Create a function that takes an array as an argument and returns true or false depending on whether the average of all elements in the array is a whole number or not.
+function isAvgWhole(arr) {
+	var summed = arr.reduce(function(a, b) {
+		return a + b;
+	})
+	var floatOrNot = summed / arr.length;
+	if (Number.isInteger(floatOrNot)) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+// Write a function that takes four string arguments. You will be comparing the first string to the three next strings. Verify if the first string starts with the second string, 
+// includes the third string, and ends with the fourth string. If the first string passes all checks, return the string "My head, body, and tail.", otherwise, return "Incomplete.".
+
+function verifySubstrs(mainStr, head, body, tail) {
+	if (mainStr.startsWith(head) && mainStr.includes(body) && mainStr.endsWith(tail)) {
+		return "My head, body, and tail.";
+	} else {
+		return "Incomplete.";
+	}
+}
