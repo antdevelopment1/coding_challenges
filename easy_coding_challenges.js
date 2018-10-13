@@ -102,3 +102,8 @@ function countVowels(str) {
 function myPi(n) {
 	return Number(Math.PI.toFixed(n));
 }
+
+// Create a function that takes a string and returns a new string with all vowels removed.
+function silenceTrump(str) {
+	return str.replace(/[aiueo]/gi, "");
+  }
