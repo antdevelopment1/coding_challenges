@@ -164,3 +164,11 @@ function minMaxLengthAverage(arr) {
 	var average = sum / sequence;
 	return [minNum, maxNum,sequence, average];
 }
+
+// Create a function that takes an array of strings and return an array, sorted from shortest to longest.
+function sortByLength(arr) {
+	let inOrder = arr.sort(function(a, b) {
+		return a.length - b.length;
+	})
+	return inOrder
+}
