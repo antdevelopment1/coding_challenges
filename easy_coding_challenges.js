@@ -179,11 +179,36 @@ function highLow(str) {
     let numbers = splitStr.map(function(number) {
       number = Number(number);
       return number;
-      })
+    })
     let sorted = numbers.sort(function(a, b) {
       return a - b;
     });
     let min = numbers[0];
     let max = numbers[numbers.length - 1];
     return `${max} ${min}`;
+}
+
+// Create a function that takes a string, checks if it has the same number of 'x's and 'o's and returns either true or false.
+// Return a boolean value (true or false).
+// The string can contain any character.
+// When neither an x nor an o is in the string, return true.
+function XO(str) {
+    let x = 0;
+    let o = 0;
+    str = str.toLowerCase();
+    let splitStr = str.split("");
+    for (var i = 0; i < splitStr.length; i++) {
+        if (splitStr[i] === 'x') {
+            x++;
+        } else if (splitStr[i] === 'o') {
+            o++;
+        }
+    }
+    if (x === o) {
+        return true;
+    } else if (x === 0 && o === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
