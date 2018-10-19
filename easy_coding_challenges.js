@@ -172,3 +172,18 @@ function sortByLength(arr) {
 	})
 	return inOrder
 }
+
+// Create a function that accepts a string of space separated numbers and returns the highest and lowest number (as a string).
+function highLow(str) {
+    let splitStr = str.split(" ");
+    let numbers = splitStr.map(function(number) {
+      number = Number(number);
+      return number;
+      })
+    let sorted = numbers.sort(function(a, b) {
+      return a - b;
+    });
+    let min = numbers[0];
+    let max = numbers[numbers.length - 1];
+    return `${max} ${min}`;
+}
