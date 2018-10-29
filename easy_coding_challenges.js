@@ -233,3 +233,26 @@ function comp(str1, str2) {
 	  return false;
   }
 }
+
+// Create a function that takes a string as an argument and returns a coded (h4ck3r 5p34k) version of the string.
+
+function hackerSpeak(str) {
+	let splitSen = str.toLowerCase().split('');
+	let newArr = [];
+	for (let i = 0; i < splitSen.length; i++) {
+		if (splitSen[i] === 'a') {
+			splitSen[i] = '4';
+		} else if (splitSen[i] === 'e') {
+		  	splitSen[i] = '3';
+		} else if (splitSen[i] === 'i') {
+			splitSen[i] = '1';
+		} else if (splitSen[i] === 'o') {
+			splitSen[i] = '0';
+		} else if (splitSen[i] === 's') {
+			splitSen[i] = '5';
+		} else {
+			splitSen[i] = splitSen[i];
+		}
+	}
+	return splitSen.join('');
+ }
