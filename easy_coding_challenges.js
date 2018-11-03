@@ -225,7 +225,6 @@ function factorial(int) {
 }
 
 // Create a function that takes two strings as arguments and return either true or false depending on whether the number of their charcters is equal or not.
-
 function comp(str1, str2) {
   if (str1.length === str2.length) {
 	return true;
@@ -235,7 +234,6 @@ function comp(str1, str2) {
 }
 
 // Create a function that takes a string as an argument and returns a coded (h4ck3r 5p34k) version of the string.
-
 function hackerSpeak(str) {
 	let splitSen = str.toLowerCase().split('');
 	let newArr = [];
@@ -256,3 +254,18 @@ function hackerSpeak(str) {
 	}
 	return splitSen.join('');
  }
+
+//  Create a function that alternates the case of the characters in a string.
+ function alternatingCaps(str) {
+	str = str.toLowerCase();
+	let splitStr = str.split('');
+	let newString =[];
+	splitStr.forEach((letter,index) => {
+	  if (index % 2 === 0 ) {
+		newString.push(letter.toUpperCase());
+	  } else {
+		newString.push(letter);
+	  }
+	  })
+	return newString.join('');
+  }
