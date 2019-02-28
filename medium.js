@@ -14,3 +14,26 @@ function makeTitle(str) {
 }
 
 console.log(makeTitle("Hi how are you today"))
+
+// Given an array of numbers, write a function that returns an array that...
+// Has all duplicate elements removed.
+// Is sorted from least to greatest value.
+function uniqueSort(arr) {
+	arr = arr.sort((a, b) => {
+		return a - b;
+	})
+	if (arr.length === 0) {
+        return 0;
+    }
+    let newArr = [];
+    newArr.push(arr[0]);
+    let i = 0;
+    for (let j = 1; j < arr.length; j++) {
+        if (arr[i] !== arr[j]) {
+            i++;
+            newArr.push(arr[j]);
+            arr[i] = arr[j];
+        }
+    }
+    return newArr;
+}
