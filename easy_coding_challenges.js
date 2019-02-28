@@ -282,4 +282,22 @@ function truncate(txt, txt_length, txt_suffix = null){
 	return finalString;
 }
 
-console.log(truncate("CatDogDuck", 9, "Rat"))
+// console.log(truncate("CatDogDuck", 9, "Rat"))
+
+// Create a function that takes an object and returns the keys and values as separate arrays.
+function keysAndValues(obj) {
+	let obj1 = obj;
+	let keys = [];
+	let values = [];
+	let final = [];
+
+	for (let key in obj1) {
+		keys.push(key);
+		values.push(obj1[key]);
+	}
+	final.push(keys, values);
+	return final;
+
+}
+
+console.log(keysAndValues({a: 1, b: 2, c: 3}))
